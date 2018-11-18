@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
+require_relative '../lib/DOW30'
 
-require "DOW30"
+Scraper.print_hello
