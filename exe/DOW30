@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
 require_relative '../lib/DOW30'
 
-Scraper.print_hello
+Scraper.get_data
+Dowjones.all
+Dowjones.company_names
