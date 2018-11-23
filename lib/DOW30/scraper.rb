@@ -1,3 +1,5 @@
+require 'pry'
+
 class Scraper
 
   def self.get_data
@@ -10,8 +12,13 @@ class Scraper
       #id = row.first[1].split("_").last
       company_name = row.search("a").text
       stock_price = row.css(".pid-#{id}-last").text.to_f
+      change_in_price = row.css(".bold.redFont").first.text.to_f
+      change_in_percent = row.css(".bold.redFont").last.text
       Dowjones.new(company_name, stock_price)
     end
+
+
+
   end
 
 
