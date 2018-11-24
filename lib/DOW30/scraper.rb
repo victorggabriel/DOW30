@@ -13,6 +13,7 @@ class Scraper
       dow_company = {
       company_name:  row.search("a").text,
       stock_price: row.css(".pid-#{id}-last").text.to_f,
+      volume: row.css(".pid-#{id}-turnover").text
       }
 
 
