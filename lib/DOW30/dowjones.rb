@@ -4,10 +4,12 @@ class Dowjones
 
   @@all = []
 
-  def initialize(company_name, stock_price)
-    @company_name = company_name
-    @stock_price = stock_price
-    @@all << self
+  #send call the attribute setter method for the object
+
+  def initialize(dow_hash)
+   dow_hash.each do |key, value|
+     self.send("#{key}=", value)
+   end
   end
 
   def self.all
@@ -16,3 +18,6 @@ class Dowjones
 
 
 end
+
+
+
