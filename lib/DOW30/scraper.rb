@@ -1,5 +1,3 @@
-require 'pry'
-
 class Scraper
 
   def self.get_data
@@ -7,19 +5,29 @@ class Scraper
     table = html.css("tbody")
     table_row = table.css("tr")[1..29]
 
+
     table_row.each do |row|
       id = row.attribute("id").value.split("_").last
       #id = row.first[1].split("_").last
-      company_name = row.search("a").text
-      stock_price = row.css(".pid-#{id}-last").text.to_f
-      change_in_price = row.css(".bold.redFont").first.text.to_f
-      change_in_percent = row.css(".bold.redFont").last.text
-      Dowjones.new(company_name, stock_price)
+
+      dow_company = {
+      company_name:  row.search("a").text,
+      stock_price: row.css(".pid-#{id}-last").text.to_f,
+      }
+
+
+      if !row.css(".bold.redFont").empty?
+        dow_company[:change_in_price] = row.css(".bold.redFont.pid-#{id}-pc").text.to_f
+        dow_company[:change_in_percent] = row.css(".bold.redFont").last.text
+      else
+        dow_company[:change_in_price] = row.css(".bold.greenFont.pid-#{id}-pc").text.to_f
+        dow_company[:change_in_percent] = row.css(".bold.greenFont").last.text
+      end
+
+
+      Dowjones.new(dow_company)
     end
 
 
-
   end
-
-
 end
