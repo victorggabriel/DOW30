@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 require 'pry'
+require 'colorize'
 
 
 require_relative 'DOW30/version'
