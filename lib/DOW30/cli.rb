@@ -2,9 +2,9 @@ class CLI
 
   def run
     greeting
-    #binding.pry
     Scraper.get_data
     display_companies_list
+    binding.pry
     ask_user_input
     sanitize_user_input
   end

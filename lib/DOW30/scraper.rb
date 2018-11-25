@@ -10,11 +10,20 @@ class Scraper
       id = row.attribute("id").value.split("_").last
       #id = row.first[1].split("_").last
 
-      dow_company = {
-      company_name:  row.search("a").text,
-      stock_price: row.css(".pid-#{id}-last").text.to_f,
-      volume: row.css(".pid-#{id}-turnover").text
-      }
+      dow_company = {}
+      name = row.search("a").text
+      if name.include?("-")
+        dow_company[:company_name] = name.gsub("-", " ")
+      elsif name.include?("’")
+        dow_company[:company_name] = name.gsub("’", "")
+      else
+        dow_company[:company_name] = name
+      end
+
+
+      dow_company[:stock_price] = row.css(".pid-#{id}-last").text.to_f
+      dow_company[:volume] = row.css(".pid-#{id}-turnover").text
+
 
 
       if !row.css(".bold.redFont").empty?
