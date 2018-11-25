@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4525c88-c59a-4876-8f87-7bbe5aa39b92" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DOW30.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DOW30.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exe/DOW30" beforeDir="false" afterPath="$PROJECT_DIR$/exe/DOW30" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/DOW30/dowjones.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DOW30/dowjones.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/DOW30/scraper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DOW30/scraper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/DOW30/cli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DOW30/cli.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,45 +40,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="DOW30" value="6" />
+          <entry key="DOW30" value="7" />
           <entry key="Gemfile" value="1" />
           <entry key="console" value="1" />
           <entry key="gemspec" value="4" />
           <entry key="gitignore" value="2" />
           <entry key="lock" value="1" />
-          <entry key="rb" value="19" />
+          <entry key="rb" value="20" />
           <entry key="rspec" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Ruby" value="31" />
+          <entry key="Ruby" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="DOW30" value="974" />
+          <entry key="DOW30" value="1001" />
           <entry key="gemspec" value="15" />
           <entry key="gitignore" value="3" />
-          <entry key="rb" value="2995" />
+          <entry key="rb" value="3230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Ruby" value="3984" />
+          <entry key="Ruby" value="4246" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="690">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -89,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/dowjones.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="487">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -98,8 +95,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exe/DOW30">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="184">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="110" selection-start-line="7" selection-start-column="110" selection-end-line="7" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -115,9 +121,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/DOW30.rb" />
         <option value="$PROJECT_DIR$/DOW30.gemspec" />
-        <option value="$PROJECT_DIR$/lib/DOW30/scraper.rb" />
         <option value="$PROJECT_DIR$/lib/DOW30/dowjones.rb" />
+        <option value="$PROJECT_DIR$/lib/DOW30/scraper.rb" />
         <option value="$PROJECT_DIR$/exe/DOW30" />
+        <option value="$PROJECT_DIR$/lib/DOW30/cli.rb" />
       </list>
     </option>
   </component>
@@ -201,12 +208,12 @@
       <workItem from="1543011828191" duration="6292000" />
       <workItem from="1543018134832" duration="13853000" />
       <workItem from="1543109995968" duration="1175000" />
-      <workItem from="1543151158547" duration="1341000" />
+      <workItem from="1543151158547" duration="3116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33333000" />
+    <option name="totallyTimeSpent" value="35108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -220,7 +227,7 @@
   <component name="ToolWindowManager">
     <frame x="17" y="16" width="984" height="937" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.41719747" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.41719747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,7 +240,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.34226552" />
-      <window_info active="true" anchor="bottom" x="1045" y="120" width="621" height="796" id="Terminal" order="10" type="FLOATING" visible="true" weight="0.3544458" />
+      <window_info active="true" anchor="bottom" x="1024" y="120" width="642" height="796" id="Terminal" order="10" type="FLOATING" visible="true" weight="0.3544458" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -334,27 +341,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exe/DOW30">
+    <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="690">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/DOW30/dowjones.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="487">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
+    <entry file="file://$PROJECT_DIR$/exe/DOW30">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="184">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="110" selection-start-line="7" selection-start-column="110" selection-end-line="7" selection-end-column="110" />
         </state>
       </provider>
     </entry>

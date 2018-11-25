@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 require_relative '../lib/DOW30'
 
-Scraper.get_data
+CLI.new.run
 
-puts Dowjones.company_names_collection
+
+#Scraper.get_data
+
+#puts Dowjones.company_names_collection
 
 #Dowjones.all.each do |val|
  # if val.change_in_price.to_f > 0.0
