@@ -18,10 +18,10 @@ class Scraper
 
 
       if !row.css(".bold.redFont").empty?
-        dow_company[:change_in_price] = row.css(".bold.redFont.pid-#{id}-pc").text.to_f
+        dow_company[:change_in_price] = row.css(".bold.redFont.pid-#{id}-pc").text
         dow_company[:change_in_percent] = row.css(".bold.redFont").last.text
       else
-        dow_company[:change_in_price] = row.css(".bold.greenFont.pid-#{id}-pc").text.to_f
+        dow_company[:change_in_price] = row.css(".bold.greenFont.pid-#{id}-pc").text
         dow_company[:change_in_percent] = row.css(".bold.greenFont").last.text
       end
 
