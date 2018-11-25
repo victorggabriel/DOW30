@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4525c88-c59a-4876-8f87-7bbe5aa39b92" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/DOW30/cli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DOW30/cli.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/DOW30/dowjones.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DOW30/dowjones.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,17 +58,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="DOW30" value="1001" />
+          <entry key="DOW30" value="1004" />
           <entry key="gemspec" value="15" />
           <entry key="gitignore" value="3" />
-          <entry key="rb" value="3412" />
-          <entry key="txt" value="36" />
+          <entry key="rb" value="3440" />
+          <entry key="txt" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Ruby" value="4428" />
+          <entry key="PLAIN_TEXT" value="254" />
+          <entry key="Ruby" value="4459" />
         </counts>
       </usages-collector>
     </session>
@@ -81,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
+            <state relative-caret-position="437">
               <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/dowjones.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exe/DOW30">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="483">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -108,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="234">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -126,10 +126,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/DOW30.rb" />
         <option value="$PROJECT_DIR$/DOW30.gemspec" />
-        <option value="$PROJECT_DIR$/lib/DOW30/dowjones.rb" />
         <option value="$PROJECT_DIR$/lib/DOW30/scraper.rb" />
-        <option value="$PROJECT_DIR$/exe/DOW30" />
         <option value="$PROJECT_DIR$/lib/DOW30/cli.rb" />
+        <option value="$PROJECT_DIR$/exe/DOW30" />
+        <option value="$PROJECT_DIR$/lib/DOW30/dowjones.rb" />
       </list>
     </option>
   </component>
@@ -140,8 +140,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="60" />
+    <option name="x" value="27" />
+    <option name="y" value="43" />
     <option name="width" value="984" />
     <option name="height" value="937" />
   </component>
@@ -214,12 +214,20 @@
       <workItem from="1543011828191" duration="6292000" />
       <workItem from="1543018134832" duration="13853000" />
       <workItem from="1543109995968" duration="1175000" />
-      <workItem from="1543151158547" duration="5239000" />
+      <workItem from="1543151158547" duration="7131000" />
     </task>
+    <task id="LOCAL-00001" summary="Call Scraper.get_data so the data can be display to the user">
+      <created>1543157604397</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543157604397</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37231000" />
+    <option name="totallyTimeSpent" value="39123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,8 +239,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="17" y="16" width="984" height="937" extended-state="0" />
-    <editor active="true" />
+    <frame x="27" y="43" width="984" height="937" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908257" weight="0.41719747" />
       <window_info id="Structure" order="1" sideWeight="0.50091743" side_tool="true" weight="0.41719747" />
@@ -246,8 +253,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32886723" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.34178743" />
-      <window_info active="true" anchor="bottom" x="1024" y="120" width="642" height="796" id="Terminal" order="10" type="FLOATING" visible="true" weight="0.3544458" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.34178743" />
+      <window_info anchor="bottom" x="396" y="179" width="642" height="796" id="Terminal" order="10" weight="0.35386473" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -297,6 +304,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Call Scraper.get_data so the data can be display to the user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Call Scraper.get_data so the data can be display to the user" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bin/console">
@@ -348,31 +359,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/DOW30/dowjones.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exe/DOW30">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="483">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
+        <state relative-caret-position="437">
           <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/DOW30/dowjones.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="234">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>

@@ -12,8 +12,9 @@ class CLI
   end
 
   def display_companies_list
-    Dowjones.company_names_collection.each_with_index { |name, index| puts "#{index + 1}. #{name}" }
+    Dowjones.company_names_collection.each_with_index { |name, index| puts "#{name}" }
   end
+
 
 
 

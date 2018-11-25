@@ -27,10 +27,8 @@ class Dowjones
   end
 
   def self.find_by_name(company)
-    self.all.each do |key|
-      if key.company_name.upcase == company.upcase
-        puts "#{key.company_name} is trading at #{key.stock_price}"
-      end
+    self.all.find do |obj|
+      obj.company_name.upcase == company.upcase
     end
   end
 
