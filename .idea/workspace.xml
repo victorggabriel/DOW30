@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4525c88-c59a-4876-8f87-7bbe5aa39b92" name="Default Changelist" comment="Refactor to use find enumerable">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f4525c88-c59a-4876-8f87-7bbe5aa39b92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/lib/DOW30/cli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DOW30/cli.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,14 +60,14 @@
           <entry key="DOW30" value="1004" />
           <entry key="gemspec" value="15" />
           <entry key="gitignore" value="3" />
-          <entry key="rb" value="3681" />
-          <entry key="txt" value="292" />
+          <entry key="rb" value="3844" />
+          <entry key="txt" value="314" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="295" />
-          <entry key="Ruby" value="4700" />
+          <entry key="PLAIN_TEXT" value="317" />
+          <entry key="Ruby" value="4863" />
         </counts>
       </usages-collector>
     </session>
@@ -81,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
+            <state relative-caret-position="283">
               <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
             </state>
           </provider>
@@ -108,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+            <state relative-caret-position="342">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -150,36 +149,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DOW30" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOW30" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOW30" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOW30" type="462c0819:PsiDirectoryNode" />
-              <item name="exe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOW30" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOW30" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOW30" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOW30" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="DOW30" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="TODO_SCOPE" value="All Places" />
@@ -216,7 +186,7 @@
       <workItem from="1543018134832" duration="13853000" />
       <workItem from="1543109995968" duration="1175000" />
       <workItem from="1543151158547" duration="7748000" />
-      <workItem from="1543159819163" duration="312000" />
+      <workItem from="1543159819163" duration="2060000" />
     </task>
     <task id="LOCAL-00001" summary="Call Scraper.get_data so the data can be display to the user">
       <created>1543157604397</created>
@@ -232,11 +202,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543159750104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add user input method">
+      <created>1543160512716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543160512716</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40052000" />
+    <option name="totallyTimeSpent" value="41800000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,7 +226,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="43" width="984" height="937" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908257" weight="0.41719747" />
       <window_info id="Structure" order="1" sideWeight="0.50091743" side_tool="true" weight="0.41719747" />
@@ -318,7 +294,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Call Scraper.get_data so the data can be display to the user" />
     <MESSAGE value="Refactor to show list without index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor to show list without index" />
+    <MESSAGE value="Add user input method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user input method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bin/console">
@@ -370,17 +347,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exe/DOW30">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/DOW30/scraper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -393,8 +370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/DOW30/cli.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        <state relative-caret-position="342">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>

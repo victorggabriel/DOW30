@@ -6,6 +6,7 @@ class CLI
     Scraper.get_data
     display_companies_list
     ask_user_input
+    sanitize_user_input
   end
 
   def greeting
@@ -19,6 +20,16 @@ class CLI
   def ask_user_input
     puts "\nSelect Company from the list above\nEnter company name: "
     @input = gets.strip
+  end
+
+  def sanitize_user_input
+   if @input.gsub(" ", "").match?(/^[A-Za-z]+$/)
+     display_companies_list
+   end
+  end
+
+  def display_company_detail
+
   end
 
 
