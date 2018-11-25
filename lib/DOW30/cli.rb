@@ -36,7 +36,20 @@ class CLI
   end
 
   def display_company_detail
-  binding.pry
+   dow = Dowjones.find_by_name(@input)
+
+   puts "\nCompany: #{dow.company_name}"
+   puts "Price: #{dow.stock_price}"
+
+   if dow.change_in_price.to_f > 0.0
+   puts "Price Change: #{dow.change_in_price.colorize(:green)}"
+   puts "Percentage Change: #{dow.change_in_percent.colorize(:green)}"
+   else
+     puts "Price: #{dow.change_in_price.colorize(:red)}"
+     puts "Percentage Change: #{dow.change_in_percent.colorize(:red)}"
+   end
+
+
   end
 
 
