@@ -2,14 +2,20 @@
 require_relative '../lib/DOW30'
 
 Scraper.get_data
-p Dowjones.all.size
-Dowjones.all.each_with_index do |val, index|
-  if val.change_in_price.to_f > 0.0
-  puts "#{val.company_name} is trading at #{val.stock_price} and the stock has change #{val.change_in_price.colorize(:green)} and has traded #{val.volume} shares"
-  else
-    puts "#{val.company_name} is trading at #{val.stock_price} and the stock has change #{val.change_in_price.colorize(:red)} and has traded #{val.volume} shares"
 
-  end
-end
+puts Dowjones.company_names_collection
+
+#Dowjones.all.each do |val|
+ # if val.change_in_price.to_f > 0.0
+ # puts "#{val.company_name} is trading at #{val.stock_price} and the stock has change #{val.change_in_price.colorize(:green)} and has traded #{val.volume} shares"
+ # else
+#  puts "#{val.company_name} is trading at #{val.stock_price} and the stock has change #{val.change_in_price.colorize(:red)} and has traded #{val.volume} shares"
+#  end
+#end
+
+#puts "Look for a stock: "
+#input = gets.chomp
+
+#Dowjones.find_by_name(input)
 
 
