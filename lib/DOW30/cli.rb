@@ -5,11 +5,16 @@ class CLI
     Scraper.get_data
     @companies = display_companies_list
     ask_user_input
-    until sanitize_user_input
-      puts 'Error, Check your spelling, Please Try Again:'
+
+
+    while @input != "exit"
+      display_company_detail
       ask_user_input
+      if @input == "exit"
+        break
+      end
     end
-    display_company_detail
+    puts "Thanks for visiting, Have a great day!"
   end
 
   def greeting
@@ -23,6 +28,11 @@ class CLI
   def ask_user_input
     puts "\nSelect Company from the list above\nEnter company name: "
     @input = gets.strip
+
+    until sanitize_user_input
+      puts 'Error, Check your spelling, Please Try Again:'
+      ask_user_input
+    end
   end
 
   def sanitize_user_input
