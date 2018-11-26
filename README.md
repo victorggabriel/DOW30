@@ -1,8 +1,6 @@
 # DOW30
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/DOW30`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This CLI project based on the Stock Market, This program scrape data from Investing site (Stock Market website) takes user input to show stocks information. Will show all the Dow Jones 30 Companies. 
 
 ## Installation
 
