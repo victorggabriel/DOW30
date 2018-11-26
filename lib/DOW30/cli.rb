@@ -36,7 +36,8 @@ class CLI
   end
 
   def sanitize_user_input
-   if @input.gsub(" ", "").match?(/^[A-Za-z]+$/)
+    smallest_companies_name = @companies.min{|a,b| a.size <=> b.size}
+   if @input.gsub(" ", "").match?(/^[A-Za-z]+$/) && @input.length >= smallest_companies_name.length
      true
    elsif @input.match?(/&/)
      @companies.any? {|name| name == @input }
