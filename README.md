@@ -10,12 +10,11 @@ And then execute:
 
     To execute the program you have to go to the exe file and then run DOW30 within the exe file
 
-Or install it yourself as:
-
-    $ gem install DOW30
 
 ## Usage
-    This DOW30 program scrape data from investing website from the section of the components, the usage of this program is to allow the user look for specefic company and search what price is the stock and how is % change within that day.
+    This DOW30 program scrape data from investing website from the section of the components, 
+    the usage of this program is to allow the user look for specefic company and search what 
+    price is the stock and how is % change within that day.
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
