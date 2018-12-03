@@ -7,26 +7,16 @@ class CLI
     ask_user_input
 
 
-  #   while @input != "exit"
-  #     display_company_detail unless @input != display_companies_list
-  #     ask_user_input
-  #     if @input == "exit"
-  #       break
-  #     end
-  #   end
-  #   puts "Thanks for visiting, Have a great day!"
-  # end
+     while @input != "exit"
+       display_company_detail
+       ask_user_input
+       if @input == "exit"
+         break
+       end
+     end
+     puts "Thanks for visiting, Have a great day!"
+   end
 
-      case ask_user_input
-        when @input == display_companies_list
-          display_company_detail
-        when @input == "exit"
-      else
-          display_company_detail
-          puts "\n"
-          puts "Thanks for visiting, Have a great day!"
-      end
-    end
 
 
   def greeting
@@ -48,11 +38,11 @@ class CLI
   end
 
   def sanitize_user_input
-      smallest_companies_name = @companies.min{|a,b| a.size <=> b.size}
-     if @input.gsub(" ", "").match?(/^[A-Za-z]+$/) && @input.length >= smallest_companies_name.length
+      @smallest_companies_name = @companies.min{|a,b| a.size <=> b.size}
+      if @input.match?(/&/)
+        verify_name_input?
+      elsif check_input?
        true
-     elsif @input.match?(/&/)
-       @companies.any? {|name| name == @input }
      else
        false
      end
@@ -75,5 +65,14 @@ class CLI
 
   end
 
+  def verify_name_input?
+    @companies.any? {|name| name.downcase == @input.downcase }
+  end
+
+  def check_input?
+    @input.gsub(" ", "").match?(/^[A-Za-z]+$/) &&
+    @input.length >= @smallest_companies_name.length &&
+    verify_name_input?
+  end
 
 end
