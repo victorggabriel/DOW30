@@ -7,15 +7,27 @@ class CLI
     ask_user_input
 
 
-    while @input != "exit"
-      display_company_detail
-      ask_user_input
-      if @input == "exit"
-        break
+  #   while @input != "exit"
+  #     display_company_detail unless @input != display_companies_list
+  #     ask_user_input
+  #     if @input == "exit"
+  #       break
+  #     end
+  #   end
+  #   puts "Thanks for visiting, Have a great day!"
+  # end
+
+      case ask_user_input
+        when @input == display_companies_list
+          display_company_detail
+        when @input == "exit"
+      else
+          display_company_detail
+          puts "\n"
+          puts "Thanks for visiting, Have a great day!"
       end
     end
-    puts "Thanks for visiting, Have a great day!"
-  end
+
 
   def greeting
     puts "Welcome to next Gen Stock Market App!\nThis will show all the companies listed in the Dow Jones 30\n\n"
@@ -36,14 +48,14 @@ class CLI
   end
 
   def sanitize_user_input
-    smallest_companies_name = @companies.min{|a,b| a.size <=> b.size}
-   if @input.gsub(" ", "").match?(/^[A-Za-z]+$/) && @input.length >= smallest_companies_name.length
-     true
-   elsif @input.match?(/&/)
-     @companies.any? {|name| name == @input }
-   else
-     false
-   end
+      smallest_companies_name = @companies.min{|a,b| a.size <=> b.size}
+     if @input.gsub(" ", "").match?(/^[A-Za-z]+$/) && @input.length >= smallest_companies_name.length
+       true
+     elsif @input.match?(/&/)
+       @companies.any? {|name| name == @input }
+     else
+       false
+     end
   end
 
   def display_company_detail
